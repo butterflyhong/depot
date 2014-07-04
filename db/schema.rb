@@ -22,12 +22,4 @@ ActiveRecord::Schema.define(version: 20140703094637) do
     t.datetime "updated_at"
   end
 
-  create_table "user", force: true do |t|
-    t.text    "name",   null: false
-    t.integer "age",    null: false
-    t.text    "gender", null: false
-  end
-
-  add_index "user", ["id"], name: "sqlite_autoindex_user_1", unique: true
-
 end
